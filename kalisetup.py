@@ -25,6 +25,9 @@ os.mkdir("~/hackthebox")
 os.mkdir("~/htbacademy")
 os.mkdir("~/pentestit")
 
+# Install GoBuster
+os.system("/usr/bin/apt -y install gobuster")
+
 # Install SecLists
 os.chdir("/opt")
 os.system("/usr/bin/apt -y install seclists")
