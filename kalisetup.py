@@ -2,6 +2,9 @@
 
 import os
 
+# Check admin priviledges
+if os.geteuid() != 0:
+    exit("You must run this program as root")
 
 os.chdir("~/")
 
